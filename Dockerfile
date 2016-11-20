@@ -15,6 +15,7 @@ RUN \
 # 配置nginx
 
 Copy ./default /etc/nginx/sites-available/default
+Copy ./mysqld.cnf /etc/mysql/mysql.conf.d/mysqld.cnf
 
 # 添加启动脚本
 ADD ./start.sh /start.sh
